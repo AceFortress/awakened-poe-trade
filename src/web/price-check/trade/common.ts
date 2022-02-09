@@ -59,13 +59,13 @@ export function getTradeEndpoint (): string {
 
 export const RATE_LIMIT_RULES = {
   SEARCH: shallowReactive(new Set([
-    new RateLimiter(1, 5)
+    new RateLimiter(1, 25)
   ])),
   EXCHANGE: shallowReactive(new Set([
-    new RateLimiter(1, 5)
+    new RateLimiter(1, 25)
   ])),
   FETCH: shallowReactive(new Set([
-    new RateLimiter(1, 5)
+    new RateLimiter(1, 25)
   ]))
 }
 
